@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+        <title>
+            {% if page.title %}
+                {{ page.title }} - {{ site.abbreviation }}
+            {% else %}
+                {{ site.name }}
+            {% endif %}
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+        <!-- CSS tools -->
+        <link href="/css/bootstrap.css" rel="stylesheet">
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+        <link href="/css/justified-nav.css" rel="stylesheet">
 
     </head>
     <body>
