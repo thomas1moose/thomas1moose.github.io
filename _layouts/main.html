@@ -7,11 +7,10 @@ layout: default
       <div class="masthead">
         <a href="/"><h3 class="text-muted">{{ site.name }}</h3></a>
         <ul class="nav navbar-nav nav-justified">
-          <li><a href="/events">Events</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">History</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li{% if page.title == 'Events'%} class="active" {% endif %}><a href="/events">Events</a></li>
+          <li{% if page.title == 'Blog'%} class="active" {% endif %}><a href="/blog">Blog</a></li>
+          <li{% if page.title == 'About'%} class="active" {% endif %}><a href="/about">About</a></li>
+          <li{% if page.title == 'Contact'%} class="active" {% endif %}><a href="/contact">Contact</a></li>
         </ul>
       </div>
       
@@ -19,7 +18,7 @@ layout: default
 
       <!-- Site footer -->
       <div class="footer">
-        <p>© Thomas One Moose</p>
+        <p>© Thomas 1 Moose</p>
       </div>
 
     </div>
