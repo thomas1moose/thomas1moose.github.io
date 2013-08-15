@@ -1,166 +1,28 @@
-<!doctype html>
+---
+layout: main
+---
 
-<html>
-  
-  <head>
-    <style>
-      .header {
-        float:top;
-        height:150px;
-      }
-      .header-title {
-        padding: 10px 50px 10px 50px;
-      }
-      .header-title-text {
-        font-family: Verdana;
-        color: #1B91E0;
-        text-decoration: none;
-        word-spacing: normal;
-        text-align: left;
-        letter-spacing: 0;
-        line-height: 1.5em;
-        font-size: 6em;
-      }
-      .sidebar {
-        float:left;
-        width:15%;
-        border-top:2px solid;
-        border-right:2px solid;
-        border-bottom:2px solid;
-        border-radius:25px;
-        border-color:#1B91E0;
-        border-top-left-radius:0px;
-        border-bottom-left-radius:0px;
-      }
-      .nav-item {
-        list-style-type:none;
-        padding: 4px 10px 4px;
-      }
-      .nav-item-text {
-        font-family: Verdana;
-        color: #1B91E0;
-        text-decoration: none;
-        word-spacing: normal;
-        text-align: left;
-        letter-spacing: 0;
-        line-height: 1.5em;
-        font-size: 1.5em;
-      }
-      .nav-item-text:hover {
-        color: grey;
-      }
-      .content {
-        float:right;
-        width:80%;
-      }
-      .contacts {
-        list-style-type:none;
-        margin: auto;
-      }
-      .contact-item {
-        height:150px;
-        background-color:lightgrey;
-        border: 1px dashed;
-        padding: 10px 20px 10px 20px;
-        margin:5px 20px 5px 20px;
-      }
-      .contact-pic {
-        float:left;
-        height:100%;
-      }
-      .contact-info {
-        float:left;
-        height:100%;
-        width:70%;
-        margin:auto;
-      }
-      .contact-name {
-        text-align:center;
-        padding-top:10px;
-        font-size:30px;
-      }
-      .contact-phone {
-        margin-left:100px;
-      }
-      
-      
-      /*  for phones */
-      @media screen and(max-width:500px) {
-        .header-title {
-          text-align:center;
-        }
-        .header-title-text {
-          font-size:4em;
-        }
-        .sidebar {
-          float:top;
-          width:100%;
-          border-top:none;
-          border-right:2px solid;
-          border-bottom:2px solid;
-          border-left:2px solid;
-          border-radius:25px;
-          border-color:#1B91E0;
-          border-top-right-radius:0px;
-          border-top-left-radius:0px;
-        }
-        .nav-item {
-          padding: 10px 10px 10px;
-        }
-      }
-    </style>
-    <title>New Page</title>
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-    <script type="text/javascript" src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-  </head>
-  
-  <body style="background-color:#292929">
-    <div class="header">
-      <div class="header-title">
-        <a class="header-title-text" href>Thomas 1</a>
-      </div>
+<ul class="contacts">
+  <li class="contact-item">
+    <img class="contact-pic" src="http://www.gravatar.com/avatar/4d3bc3d30135741dcb53cb2b58f36bdd?d=mm&s=180" alt>
+    <div class="contact-info">
+      <p class="contact-name">
+        Andrew Pollard
+      </p>
+      <p class="contact-phone">
+        Phone Number: (000) 000-0000
+      </p>
     </div>
-    <div class="sidebar">
-      <ul>
-        <li class="nav-item">
-          <a class="nav-item-text" href>Events</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-item-text" href>About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-item-text" href>Contact</a>
-        </li>
-      </ul>
+  </li>
+  <li class="contact-item">
+    <img class="contact-pic" src="http://www.gravatar.com/avatar/4d3bc3d30135741dcb53cb2b58f36bdd?d=mm&s=180" alt>
+    <div class="contact-info">
+      <p class="contact-name">
+        Grayson Dole
+      </p>
+      <p class="contact-phone">
+        Phone Number: (000) 000-0000
+      </p>
     </div>
-    <div class="content">
-      <ul class="contacts">
-        <li class="contact-item">
-          <img class="contact-pic" src="http://www.gravatar.com/avatar/4d3bc3d30135741dcb53cb2b58f36bdd?d=mm&s=180" alt>
-          <div class="contact-info">
-            <p class="contact-name">
-              Andrew Pollard
-            </p>
-            <p class="contact-phone">
-              Phone Number: (000) 000-0000
-            </p>
-          </div>
-        </li>
-        <li class="contact-item">
-          <img class="contact-pic" src="http://www.gravatar.com/avatar/4d3bc3d30135741dcb53cb2b58f36bdd?d=mm&s=180" alt>
-          <div class="contact-info">
-            <p class="contact-name">
-              Grayson Dole
-            </p>
-            <p class="contact-phone">
-              Phone Number: (000) 000-0000
-            </p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </body>
-
-</html>
+  </li>
+</ul>
