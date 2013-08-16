@@ -119,3 +119,22 @@
 .contact-phone {
   margin-left:100px;
 }
+
+/* fullcalendar */
+#calendar {
+  width:75%;
+  margin:auto;
+}
+
+.fc-header-title {
+  color:lightgrey;
+}
+.fc-day-header {
+  color:lightgrey;
+}
+.fc-day-number {
+  color:lightgrey;
+}
+.fc-button-previous {
+  font-color:lightgrey;
+}
