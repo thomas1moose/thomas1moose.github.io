@@ -82,6 +82,7 @@
   height:100%;
 }
 .contact-info {
+  overflow:hidden;
   height:100%;
   margin:auto;
 }
@@ -120,9 +121,14 @@
   }
 }
 @media screen and (max-width:600px) {
+  .header {
+    height:100px;
+  }
   .header a {
+    padding: 10px 10px 10px 10px;
     font-size:4em;
     text-align:center;
+    margin:auto
   }
   .sidebar {
     width:100%;
@@ -147,7 +153,10 @@
     padding:0px 0px 0px 0px;
   }
   .contact-item {
-    height:100px;
+    height:150px;
+  }
+  .contact-pic {
+    height:75%;
   }
   .contact-name {
     font-size:20px;
@@ -155,6 +164,7 @@
     margin-bottom:0px;
   }
   .contact-additional {
+    /*visibility:hidden;*/
     margin-bottom:0px;
   }
 }
