@@ -2,4 +2,24 @@
 layout: main
 ---
 
-some more content
+<script>
+$(document).ready(function() {
+    $('#calendar').fullCalendar({
+        // events: 'https://www.google.com/calendar/feeds/94ujfdd63gi5jpbnv9ipnv8jqc%40group.calendar.google.com/public/basic'
+        events: function(start, end, callback) {
+            $.ajax({
+                url: 'https://www.google.com/calendar/feeds/94ujfdd63gi5jpbnv9ipnv8jqc%40group.calendar.google.com/public/basic',
+                dataType: 'json',
+                success: function(doc) {
+                    var events = eval(doc);
+                    console.log(events)
+                    callback(events);
+                }
+            });
+        }
+    })
+
+});
+</script>
+
+<div id="calendar"></div>
