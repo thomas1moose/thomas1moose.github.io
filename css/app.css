@@ -1,16 +1,21 @@
+body {
+  position:absolute;
+}
+
 .header {
-  height:150px;
+  width:80%;
+  margin:auto;
+  position: relative;
+  margin-top: 5%;
 }
-.header-logo {
-  width:150px;
-  height:150px;
-}
+
 .logo {
   background-image:url('/img/logo.svg');
   display:block;
+  float:left;
   width:150px;
-  height:150px;
-  background-size: 150px 150px;
+  height:120px;
+  background-size: 100% 100%;
   text-indent:-9999px;
 }
 
@@ -21,9 +26,9 @@
 }
 
 .content {
-  width:80%;
   float:left;
-  margin: 30px 0px 30px 0px;
+  width:80%;
+  margin: 30px auto 30px auto;
 }
 
 
@@ -64,13 +69,10 @@
 
 /*  for smaller devices */
 @media screen and (max-width:600px) {
-  .header {
-    height:100px;
-  }
-  .header a {
-    padding: 10px 10px 10px 10px;
+  .logo {
+    width:100px;
+    height:75px;
     font-size:4em;
     text-align:center;
-    margin:auto
   }
 }
