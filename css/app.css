@@ -54,6 +54,13 @@
 .fc-button-previous {
   font-color:lightgrey;
 }
+.fc-event {
+  border: 2px solid #FFFFFF;
+  background-color:transparent;
+}
+.fc-event:hover {
+  color:grey;
+}
 
 /*  for smaller devices */
 @media screen and (max-width:600px) {
