@@ -1,24 +1,17 @@
-.logo {
-  background-image:url('/img/logo.svg');
+.header {
+  height:150px;
 }
 .header-logo {
   width:150px;
   height:150px;
-  background-color:red;
 }
-.header {
+.logo {
+  background-image:url('/img/logo.svg');
+  display:block;
+  width:150px;
   height:150px;
-}
-.header a {
-  padding: 10px 50px 10px 50px;
-  font-family: Verdana; 
-  color: #1B91E0;
-  text-decoration: none;
-  word-spacing: normal;
-  text-align: left;
-  letter-spacing: 0;
-  line-height: 1.5em;
-  font-size: 6em;
+  background-size: 150px 150px;
+  text-indent:-9999px;
 }
 
 .main-content:after {
@@ -26,35 +19,6 @@
   display:table;
   content:"  ";
 }
-.sidebar {
-  width:20%;
-  float:left;
-  border-top:2px solid;
-  border-right:2px solid;
-  border-bottom:2px solid;
-  border-radius:25px;
-  border-color:#1B91E0;
-  border-top-left-radius:0px;
-  border-bottom-left-radius:0px;
-}
-.nav-item {
-  list-style-type:none;
-  padding: 4px 10px 4px;
-}
-.nav-item a {
-  font-family: Verdana; 
-  color: #1B91E0;
-  text-decoration: none;
-  word-spacing: normal;
-  text-align: left;
-  letter-spacing: 0;
-  line-height: 1.5em;
-  font-size: 1.5em;
-}
-.nav-item a:hover {
-  color: grey;
-}
-
 
 .content {
   width:80%;
@@ -70,37 +34,6 @@
 }
 .footer p {
   color:lightgrey;
-}
-
-/* contact index */
-.contacts {
-  list-style-type:none;
-  margin: auto;
-  padding: 0px 20px 0px 20px;
-}
-.contact-item {
-  height:150px;
-  background-color:lightgrey;
-  border: 1px dashed;
-  padding: 10px 20px 10px 20px;
-  margin:5px 20px 5px 20px;
-}
-.contact-pic {
-  float:left;
-  height:100%;
-}
-.contact-info {
-  overflow:hidden;
-  height:100%;
-  margin:auto;
-}
-.contact-name {
-  text-align:center;
-  padding-top:10px;
-  font-size:30px;
-}
-.contact-additional {
-  text-align:center;
 }
 
 /* fullcalendar */
@@ -123,11 +56,6 @@
 }
 
 /*  for smaller devices */
-@media screen and (max-width:700px) {
-  .contact-name {
-    font-size:20px;
-  }
-}
 @media screen and (max-width:600px) {
   .header {
     height:100px;
@@ -137,42 +65,5 @@
     font-size:4em;
     text-align:center;
     margin:auto
-  }
-  .sidebar {
-    width:100%;
-    border-top:none;
-    border-right:2px solid;
-    border-bottom:2px solid;
-    border-left:2px solid;
-    border-radius:25px;
-    border-color:#1B91E0;
-    border-top-right-radius:0px;
-    border-top-left-radius:0px;
-  }
-  .nav-item {
-    padding: 10px 10px 10px;
-  }
-
-  .content {
-    width:100%;
-  }
-
-  .contacts {
-    padding:0px 0px 0px 0px;
-  }
-  .contact-item {
-    height:150px;
-  }
-  .contact-pic {
-    height:75%;
-  }
-  .contact-name {
-    font-size:20px;
-    padding-top:5px;
-    margin-bottom:0px;
-  }
-  .contact-additional {
-    /*visibility:hidden;*/
-    margin-bottom:0px;
   }
 }
