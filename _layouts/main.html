@@ -2,24 +2,23 @@
 layout: default
 ---
 
-<div class="container">
+<!-- Site Header -->
+<div class="header">
+  <div class="header-logo">
+    <!-- <img href="/" class="logo"> -->
+      <!-- <object type="image/svg+xml" data="/img/logo.svg" class="logo">Your browser does not support SVG</object> -->
+    <!-- </img> -->
+    <a href="/" class="logo">Thomas 1</a>
+  </div>
+</div>
 
-      <div class="masthead">
-        <a href="/"><h3 class="text-muted">{{ site.name }}</h3></a>
-        <ul class="nav navbar-nav nav-justified">
-          <li><a href="/events">Events</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">History</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </div>
-      
-      {{ content }}
+<div class="main-content">
+  <div class="content">
+    {{ content }}
+  </div>
+</div>
 
-      <!-- Site footer -->
-      <div class="footer">
-        <p>© Thomas One Moose</p>
-      </div>
-
-    </div>
+<!-- Site Footer -->
+<div class="footer">
+  <p>© Thomas One Moose</p>
+</div>
